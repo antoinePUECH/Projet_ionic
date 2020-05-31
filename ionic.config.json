@@ -1,0 +1,7 @@
+{
+  "name": "friendsMap",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

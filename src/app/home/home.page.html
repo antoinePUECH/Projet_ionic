@@ -1,0 +1,40 @@
+<ion-app>
+  
+  <div class="infoMobile"></div>
+
+<ion-content>
+    <div class="head">
+      <div id="leftHead">
+        <p>
+          <img src="../../assets/Drouin.svg" alt="photo de profil">
+          Amis
+        </p>
+      </div>
+      <div id="rightHead">
+        <img src="../../assets/ic_search_24px.svg" alt="search">
+        <img src="../../assets/ic_add_24px.svg" alt="add friends" id="add" (click)="toggle()">
+      </div>
+    </div>
+    <div id="formAjout" *ngIf="ajout">
+      <p>Ajouter un ami !</p>
+    <ion-input [(ngModel)]="name" placeholder="Nom" style="border: #FF0D5E solid 2px; margin: 0 10px;  border-radius: 30px; "></ion-input>
+    <ion-input [(ngModel)]="firstname" placeholder="Prenom" style="border: #FF0D5E solid 2px; margin: 0 10px;  border-radius: 30px; "></ion-input>
+    <ion-button style="width: 90%;" (click)="addFriend()">Add Friend</ion-button>
+    </div>
+    <div id="listeContact">
+      
+      <ion-item *ngFor="let ami of amis; let i = index;" (click)="message()">
+        <img src="../../assets/{{ami.src}}">
+        <div id="allInfo">
+          <div id="info">
+            <ion-label style="text-transform: capitalize;" >{{ami.nom}} {{ami.prenom}}</ion-label>
+            <ion-label id="notif">{{ami.notification}}</ion-label>
+          </div>
+          <div id="heure">
+            <ion-label>{{ami.heure}}</ion-label>
+          </div>
+        </div>
+      </ion-item>
+    </div>
+</ion-content>
+</ion-app> 

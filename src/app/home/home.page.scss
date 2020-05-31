@@ -1,0 +1,86 @@
+
+
+*{
+  box-sizing: border-box;
+}
+.infoMobile{
+  height: 5vh;
+  background-color: grey;
+}
+ion-content{
+  --background: #20276E;
+  font-family: Montserrat;
+  .head{
+    padding:10px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    #leftHead{
+      display: flex;
+      p{
+        
+        font-weight: 600;
+        font-size: 20px;
+      }
+      img{
+        vertical-align: middle;
+        padding-right: 30px;
+      }
+    }
+    #rightHead{
+      display: flex;
+      #add{
+        padding-left: 15px;
+      }
+      #ion{
+        margin: 0 20px;
+      }
+    }
+  }
+  #formAjout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      p{
+        color: white;
+        padding: 0 45px;
+        width: 100%;
+      }
+      ion-input{
+        box-sizing: border-box;
+        padding: 1px 8px!important;
+      }
+  }
+  #listeContact{
+    border-bottom: solid 1px grey;
+  
+    ion-item{
+      --background: #20276E;
+      border-top: solid grey 1px;
+      padding: 10px 0;
+      img{
+        border-radius: 50px;
+        margin-right: 15px;
+        width: 50px;
+      }
+      #allInfo{
+        display: flex;
+        align-items: center;
+        #info{
+
+          #notif{
+            font-size: 12px;
+            font-weight: 100;
+          }
+        }
+        #heure{
+          position: absolute;
+          right: 5%;
+          font-size: 12px;
+          
+        }
+      }
+    }
+  }
+}

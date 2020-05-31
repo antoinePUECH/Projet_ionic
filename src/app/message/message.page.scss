@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+.infoMobile{
+    height: 3vh;
+    background-color: transparent;
+  }
+  ion-content{
+    --background: #20276E;
+    font-family: Montserrat;
+    #right{
+        background-color: #2172FF;
+        max-width: 65%; 
+        position: absolute;
+        right: 5%;
+        margin-bottom: 30px;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    #left{
+        background-color: #5D646C;
+        max-width: 65%;
+        position: absolute;
+        left: 5%;
+        margin-bottom: 30px;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    #block{
+        height: 6vh;
+        
+    }
+    #send{
+        display: flex;
+        align-items: center;
+    }
+    ion-input{
+        box-sizing: border-box;
+        padding: 0px 8px!important;
+        width: 60vw !important;
+        float: right;
+        height: 3.5vh;
+      }
+
+  }

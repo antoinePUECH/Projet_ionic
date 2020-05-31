@@ -1,0 +1,45 @@
+<div class="infoMobile"></div>
+<ion-content>
+    <div class="allContent">
+      <div id="profil">
+        <img src="./../../assets/maxime le bogosse.PNG" alt="" style="border-bottom: solid 1px grey; z-index: 10;" (click)="Back()">
+      </div>
+      <div id="allMessage">
+        <div id="block">
+          <div id="right" style="margin-top:10px ;">
+            <p style="color: white; margin: 0;">Hello</p>
+          </div>
+        </div>
+        <div id="block">
+          <div id="left">
+            <p style="color: white; margin: 0;">Yo mec ca va ?</p>
+          </div>
+        </div>
+        <div id="block" style="margin-bottom: 10px;">
+          <div id="right">
+            <p style="color: white; margin: 0;">Tranquille ! Ca avance ton projet dapp ?</p>
+          </div>
+        </div>
+        <div id="block">
+          <div id="left">
+            <p style="color: white; margin: 0;">Ouais ca bosse hein mdr</p>
+          </div>
+        </div>
+        <div id="block">
+          <div id="left">
+            <p style="color: white; margin: 0;">Tu pourrais m'aider ?</p>
+          </div>
+        </div>
+        <div id="block" *ngFor="let message of messages; let i = index;">
+          <div id="right" >
+            <p style="color: white; margin: 0;">{{message.message}}</p>
+          </div>
+        </div>
+      </div>
+      <div id="send" style="margin-top: 20px; border-top: black solid 1px; padding: 5px 0px; height: 5vh;">
+        <ion-input [(ngModel)]="msg" style="border: #FF0D5E solid 2px; margin: 0 15px;  border-radius: 30px;" id="send"></ion-input> 
+        <ion-icon name="arrow-forward-circle" style="font-size: 25px; margin-right: 10px;" (click)="send()" ></ion-icon>
+      </div>
+      <img src="./../../assets/Keyboard Alphabetic.svg" alt="">
+    </div>
+</ion-content>
